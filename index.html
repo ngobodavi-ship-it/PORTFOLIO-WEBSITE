@@ -417,6 +417,21 @@ header{
 }
 .proj-card .open::after{content:"→";transition:transform .2s}
 .proj-card:hover .open::after{transform:translateX(4px)}
+/* ---- Communication digitale : galerie médias ---- */
+.com-intro{font-size:15.5px;color:var(--ink-soft);max-width:760px;margin:-8px 0 26px}
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.media-grid.photos{grid-template-columns:repeat(4,1fr);margin-top:20px}
+.media-card{background:var(--paper-2);border:1px solid var(--line);border-radius:2px;overflow:hidden;display:flex;flex-direction:column;margin:0}
+.media-card video,.media-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--blue-900)}
+.media-card video{object-fit:contain}
+.media-card.portrait img{aspect-ratio:3/4}
+.media-card a{display:block}
+.media-card a:hover img{opacity:.9}
+.media-card figcaption{padding:14px 18px;font-size:14px;color:var(--ink-soft);line-height:1.45}
+.media-card figcaption strong{display:block;font-family:var(--display);color:var(--ink);font-size:15px;margin-bottom:2px}
+.media-card .dur{font-family:var(--mono);font-size:12px;color:var(--gray)}
+@media (max-width:1024px){.media-grid,.media-grid.photos{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.media-grid,.media-grid.photos{grid-template-columns:1fr}}
 
 /* ---------- MODAL ---------- */
 .modal{
@@ -946,6 +961,41 @@ footer a:hover{color:var(--red)}
         </div>
         <div class="pc-bottom"><span class="open">Voir la fiche projet</span></div>
       </button>
+    </div>
+
+    <p class="proj-cat reveal">Communication digitale — chargé de communication</p>
+    <p class="com-intro reveal">En tant que chargé de communication d'une personnalité publique congolaise, je couvre ses activités et en assure la diffusion : captation, montage de formats courts pour TikTok, relais des passages télévisés et valorisation photo des événements.</p>
+    <div class="media-grid reveal">
+      <figure class="media-card">
+        <video controls preload="none" playsinline poster="medias/2026-11-23/photos/poster-video-1004-28.jpg"><source src="medias/2026-11-23/videos/video-1004-28.mp4" type="video/mp4"></video>
+        <figcaption><strong>Vœux de Nouvel An 2025</strong>Échange de vœux au siège national du Parti Congolais du Travail (PCT), Mpila — format vertical TikTok. <span class="dur">· 1 min</span></figcaption>
+      </figure>
+      <figure class="media-card">
+        <video controls preload="none" playsinline poster="medias/2026-11-23/photos/poster-video-1004-45.jpg"><source src="medias/2026-11-23/videos/video-1004-45.mp4" type="video/mp4"></video>
+        <figcaption><strong>Reportage terrain</strong>Format court de couverture d’activité, diffusé sur TikTok. <span class="dur">· 3 min</span></figcaption>
+      </figure>
+      <figure class="media-card">
+        <video controls preload="none" playsinline poster="medias/2026-11-23/photos/poster-video-1010-07.jpg"><source src="medias/2026-11-23/videos/video-1010-07.mp4" type="video/mp4"></video>
+        <figcaption><strong>Meeting populaire</strong>Prise de parole publique, captation relayée par TCOM TV. <span class="dur">· 13 min</span></figcaption>
+      </figure>
+    </div>
+    <div class="media-grid photos reveal">
+      <figure class="media-card portrait">
+        <a href="medias/2026-11-23/photos/photo-cosef.jpeg" target="_blank" rel="noopener"><img src="medias/2026-11-23/photos/photo-cosef.jpeg" alt="Forum COSEF — Participation à la séance plénière." loading="lazy"></a>
+        <figcaption><strong>Forum COSEF</strong>Participation à la séance plénière.</figcaption>
+      </figure>
+      <figure class="media-card portrait">
+        <a href="medias/2026-11-23/photos/photo-1008-1.jpeg" target="_blank" rel="noopener"><img src="medias/2026-11-23/photos/photo-1008-1.jpeg" alt="Rentrée scolaire 2026-2027 — Prise de parole — Projet Malongui, Bacongo 2." loading="lazy"></a>
+        <figcaption><strong>Rentrée scolaire 2026-2027</strong>Prise de parole — Projet Malongui, Bacongo 2.</figcaption>
+      </figure>
+      <figure class="media-card portrait">
+        <a href="medias/2026-11-23/photos/photo-1008-2.jpeg" target="_blank" rel="noopener"><img src="medias/2026-11-23/photos/photo-1008-2.jpeg" alt="Rentrée scolaire 2026-2027 — Remise de kits scolaires aux élèves." loading="lazy"></a>
+        <figcaption><strong>Rentrée scolaire 2026-2027</strong>Remise de kits scolaires aux élèves.</figcaption>
+      </figure>
+      <figure class="media-card portrait">
+        <a href="medias/2026-11-23/photos/photo-1008-3.jpeg" target="_blank" rel="noopener"><img src="medias/2026-11-23/photos/photo-1008-3.jpeg" alt="Rentrée scolaire 2026-2027 — Distribution de cartables, Bacongo 2." loading="lazy"></a>
+        <figcaption><strong>Rentrée scolaire 2026-2027</strong>Distribution de cartables, Bacongo 2.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
